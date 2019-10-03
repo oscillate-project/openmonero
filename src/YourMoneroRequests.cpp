@@ -799,7 +799,7 @@ YourMoneroRequests::get_random_outs(const shared_ptr< Session > session, const B
     else
     {
         j_response["status"] = "error";
-        j_response["error"]  = fmt::format("Error getting random outputs from monero deamon");
+        j_response["error"]  = fmt::format("Error getting random outputs from oscillate deamon");
     }
 
     string response_body = j_response.dump();
@@ -1530,7 +1530,7 @@ YourMoneroRequests::get_version(const shared_ptr< Session > session, const Bytes
         {"last_git_commit_hash", string {GIT_COMMIT_HASH}},
         {"last_git_commit_date", string {GIT_COMMIT_DATETIME}},
         {"git_branch_name"     , string {GIT_BRANCH_NAME}},
-        {"monero_version_full" , string {MONERO_VERSION_FULL}},
+        {"oscillate_version_full" , string {MONERO_VERSION_FULL}},
         {"api"                 , OPENMONERO_RPC_VERSION},
         {"testnet"             , CurrentBlockchainStatus::net_type  == network_type::TESTNET},
         {"network_type"        , CurrentBlockchainStatus::net_type},

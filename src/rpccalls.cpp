@@ -55,7 +55,7 @@ rpccalls::get_current_height()
 
     if (!r)
     {
-        cerr << "Error connecting to Monero deamon at "
+        cerr << "Error connecting to Oscillate deamon at "
              << deamon_url << endl;
         return 0;
     }
@@ -88,7 +88,7 @@ rpccalls::get_mempool(vector<tx_info>& mempool_txs)
 
     if (!r)
     {
-        cerr << "Error connecting to Monero deamon at "
+        cerr << "Error connecting to Oscillate deamon at "
              << deamon_url << endl;
         return false;
     }

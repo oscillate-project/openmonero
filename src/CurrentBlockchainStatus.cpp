@@ -22,7 +22,7 @@ namespace xmreg
 
 // initialize static variables
 atomic<uint64_t>        CurrentBlockchainStatus::current_height{0};
-string                  CurrentBlockchainStatus::blockchain_path{"/home/mwo/.blockchain/lmdb"};
+string                  CurrentBlockchainStatus::blockchain_path{"/home/oscillate/.blockchain/lmdb"};
 string                  CurrentBlockchainStatus::deamon_url{"http:://127.0.0.1:18081"};
 network_type            CurrentBlockchainStatus::net_type {network_type::MAINNET};
 bool                    CurrentBlockchainStatus::do_not_relay{false};
@@ -34,7 +34,7 @@ uint64_t                CurrentBlockchainStatus::search_thread_life_in_seconds {
 vector<pair<uint64_t, transaction>> CurrentBlockchainStatus::mempool_txs;
 string                  CurrentBlockchainStatus::import_payment_address_str;
 string                  CurrentBlockchainStatus::import_payment_viewkey_str;
-uint64_t                CurrentBlockchainStatus::import_fee {10000000000}; // 0.01 xmr
+uint64_t                CurrentBlockchainStatus::import_fee {1}; // 0.01 osl
 address_parse_info      CurrentBlockchainStatus::import_payment_address;
 secret_key              CurrentBlockchainStatus::import_payment_viewkey;
 map<string, unique_ptr<TxSearch>> CurrentBlockchainStatus::searching_threads;

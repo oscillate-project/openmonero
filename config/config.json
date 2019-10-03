@@ -2,13 +2,13 @@
   "daemon-url" :
   {
     "_comment" : "RPC urls to monero deamon",
-    "mainnet"  : "http://127.0.0.1:18081",
-    "testnet"  : "http://127.0.0.1:28081",
-    "stagenet" : "http://127.0.0.1:38081"
+    "mainnet"  : "http://127.0.0.1:11246",
+    "testnet"  : "http://127.0.0.1:21246",
+    "stagenet" : "http://127.0.0.1:31246"
   },
   "blockchain-path" :
   {
-    "_comment" : "if paths are empty, default Monero paths will be used",
+    "_comment" : "if paths are empty, default Oscillate paths will be used",
     "mainnet"  : "",
     "testnet"  : "",
     "stagenet" : ""
